@@ -31,13 +31,21 @@ import { Article } from '../interfaces/interfaces';
   cargarNoticias( event?){
     this.noticiasService.getTopHeadlines()
       .subscribe( resp => {
-        if (resp.articles.length>0){
+        
+        for (let res of resp) {
+          this.noticias.push(res);
+        }
+        console.log('termino el ciclo');
+        console.log(this.noticias);
+        
+        
+        /* if (resp.articles.length>0){
           this.noticias.push(...resp.articles);
         }
         if (event){
           event.target.complete();
           event.target.disabled=(resp.articles.length==0);
-        }
+        } */
       });
   }
 }

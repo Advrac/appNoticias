@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
-  apiKey:'5fc1db2f8d394f38baeca9ea625c2b22',
-  apiurl:'http://newsapi.org/v2'
+  //apiKey:'5fc1db2f8d394f38baeca9ea625c2b22',
+  //apiurl:'http://newsapi.org/v2'
+  apiurl:'https://corat.mx/wp-json/wp/v2'
 };
 
 /*

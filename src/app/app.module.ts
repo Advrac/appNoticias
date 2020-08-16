@@ -10,6 +10,8 @@ import{HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+import { StreamingMedia} from '@ionic-native/streaming-media/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +20,8 @@ import { AppComponent } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
+    InAppBrowser,
+    StreamingMedia,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
